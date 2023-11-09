@@ -1,9 +1,12 @@
-namespace StoreOperations;
+using System.Windows.Forms;
 
-public partial class Form1 : Form
+namespace StoreOperations
 {
-    public Form1()
+    public partial class Form1 : Form
     {
-        InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+        }
     }
 }

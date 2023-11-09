@@ -2,15 +2,26 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
-        <ImplicitUsings>enable</ImplicitUsings>
+        <TargetFramework>net462</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Prism.Core" Version="8.1.97" />
       <PackageReference Include="Qios.DevSuite.Components" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RegistriedAppSettings\RegistriedAppSettings.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="SettingsManager\AppSettingsDialog.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="SettingsManager\DatabaseDialog.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>

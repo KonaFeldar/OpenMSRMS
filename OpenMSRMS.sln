@@ -1,8 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreOperations", "StoreOperations\StoreOperations.csproj", "{27D4DF51-36A7-4618-8BD4-E1A55B093253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistriedAppSettings", "RegistriedAppSettings\RegistriedAppSettings.csproj", "{5ABC2389-A617-4A28-AF40-652A398F4104}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27D4DF51-36A7-4618-8BD4-E1A55B093253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D4DF51-36A7-4618-8BD4-E1A55B093253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D4DF51-36A7-4618-8BD4-E1A55B093253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D4DF51-36A7-4618-8BD4-E1A55B093253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABC2389-A617-4A28-AF40-652A398F4104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABC2389-A617-4A28-AF40-652A398F4104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABC2389-A617-4A28-AF40-652A398F4104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABC2389-A617-4A28-AF40-652A398F4104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net462</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Windows.Forms" Condition="'$(TargetFramework)' == 'net462' OR '$(TargetFramework)' == 'net48'" />
+    </ItemGroup>
+
+</Project>
