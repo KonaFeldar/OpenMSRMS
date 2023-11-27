@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 
@@ -93,8 +93,8 @@ namespace RegistriedAppSettings
 
         private void ReleaseUnmanagedResources()
         {
-            // TODO release unmanaged resources here
-            // I think this is optional, but probably a good practice to include it if you add unmanaged resources
+            // TO-DO release unmanaged resources here
+            // I think this is optional, but probably a good practice to include it if you add unmanaged resources later
         }
 
         private void Dispose(bool disposing)
