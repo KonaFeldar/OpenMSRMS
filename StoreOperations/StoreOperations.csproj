@@ -36,6 +36,9 @@
         <Reference Include="RegistriedAppSettings">
           <HintPath>..\RegistriedAppSettings\bin\Debug\RegistriedAppSettings.dll</HintPath>
         </Reference>
+        <Reference Include="StoreOperations_SDK">
+          <HintPath>..\StoreOperations-SDK\bin\Debug\StoreOperations_SDK.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Xml.Linq"/>
@@ -49,6 +52,7 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="AddonManager.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>

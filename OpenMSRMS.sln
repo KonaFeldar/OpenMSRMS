@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistriedAppSettings", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreOperations", "StoreOperations\StoreOperations.csproj", "{9EF46E51-D246-4FA0-A84C-68323C3A6F61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreOperations-SDK", "StoreOperations-SDK\StoreOperations-SDK.csproj", "{463C03C2-2A09-4260-B742-1786E595795D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{9EF46E51-D246-4FA0-A84C-68323C3A6F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF46E51-D246-4FA0-A84C-68323C3A6F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF46E51-D246-4FA0-A84C-68323C3A6F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463C03C2-2A09-4260-B742-1786E595795D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463C03C2-2A09-4260-B742-1786E595795D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463C03C2-2A09-4260-B742-1786E595795D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463C03C2-2A09-4260-B742-1786E595795D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

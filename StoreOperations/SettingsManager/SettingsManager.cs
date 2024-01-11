@@ -1,6 +1,7 @@
 using System;
 using System.Data.SqlClient;
 using RegistriedAppSettings;
+using System.IO;
 
 namespace StoreOperations.SettingsManager
 {
@@ -58,6 +59,14 @@ namespace StoreOperations.SettingsManager
                 Value = ".jpg"
             };
             _gsSettings.Values.Add("ImageEnding", ksImgEnding);
+            
+            var apAddonFolder = new BaseAppSetting()
+            {
+                SettingType = BaseAppSetting.EnSettingTypes.String,
+                Encrypt = false,
+                Value = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "addons")
+            };
+            _gsSettings.Values.Add("AddonFolder", apAddonFolder);
         }
 
         /// <summary>
@@ -123,6 +132,12 @@ namespace StoreOperations.SettingsManager
         public string ImageEnding => _gsSettings.Values["ImageEnding"].Value;
 
         /// <summary>
+        /// Folder for addons (.dll files)
+        /// </summary>
+        /// <returns>String representing a folder path</returns>
+        public string AddonFolder => _gsSettings.Values["AddonFolder"].Value;
+        
+        /// <summary>
         /// The last error encountered when saving or loading the settings
         /// </summary>
         /// <returns>String representing an error</returns>
@@ -156,7 +171,7 @@ namespace StoreOperations.SettingsManager
                     if (dgAcPrompt.rbFromFolder.Checked)
                     {
                         _gsSettings.Values["ImageLocation"].Value = BaseAppSetting.EnImageLocationType.File.ToString();
-                        if (System.IO.Directory.Exists(dgAcPrompt.tbFolderPath.Text))
+                        if (Directory.Exists(dgAcPrompt.tbFolderPath.Text))
                         {
                             _gsSettings.Values["ImagePath"].Value = dgAcPrompt.tbFolderPath.Text;
                         }
@@ -270,7 +285,7 @@ namespace StoreOperations.SettingsManager
             switch (ImageLocation)
             {
                 case BaseAppSetting.EnImageLocationType.File:
-                    strReturnPath = System.IO.Path.Combine(ImagePath, strReturnPath);
+                    strReturnPath = Path.Combine(ImagePath, strReturnPath);
                     break;
                 case BaseAppSetting.EnImageLocationType.Web:
                 {
