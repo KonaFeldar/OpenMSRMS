@@ -12,15 +12,15 @@ namespace StoreOperations
         private readonly List<IAppExtension> _addonList;
         private readonly List<IItemInterface> _itemExtensions;
 
-        public enum EnAddonType
-        {
-            AppExtension,
-            Item,
-            Department,
-            Category,
-            Supplier,
-            Customer
-        }
+        // public enum EnAddonType
+        // {
+        //     AppExtension,
+        //     Item,
+        //     Department,
+        //     Category,
+        //     Supplier,
+        //     Customer
+        // }
 
         public AddonManager()
         {
@@ -28,7 +28,8 @@ namespace StoreOperations
             _itemExtensions = new List<IItemInterface>();
         }
         
-        public List<IAppExtension> AvailableAddons => _addonList;
+        public  List<IAppExtension> AvailableAddons => _addonList;
+
         public List<IItemInterface> ItemExtensions => _itemExtensions;
 
         public void LoadAllAddons(string strFolder)
