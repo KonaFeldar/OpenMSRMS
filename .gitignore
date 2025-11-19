@@ -1,5 +1,76 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+*.vssscc
+*.vsscc
+*.vspscc
 bin/
 obj/
 /packages/
+
+# Binaries and build artifacts
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.ilk
+*.log
+*.tlog
+*.trx
+*.bak
+*.ncb
+*.sbr
+*.bsc
+*.lib
+*.obj
+*.exe
+*.dll
+*.winmd
+*.appx
+*.appxbundle
+*.pri
+*.pfx
+*.snk
+*.deploy
+*.cache
+*.publish
+*.vshost.*
+*.testsettings
+*.orderedtest
+
+# NuGet packages
+packages/
+*.nupkg
+.nuget/packages/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.log
+
+# Rider IDE files (if using Rider alongside Visual Studio)
+.idea/
+Properties/
+*.sln.iml
 riderModule.iml
+
+# User-specific settings (e.g., launch settings)
+**/launchSettings*.json
+
+# Configuration files that may contain sensitive information or local settings
+# Consider carefully which appsettings files to ignore if they contain sensitive data.
+# For example, ignore local development settings but include production settings.
+# **/appsettings*.json 
+
+# Resharper or other analysis tools
+*.DotSettings
+*.DotSettings.user
 /_ReSharper.Caches/
+
+# Other common files to ignore
+Thumbs.db
+Desktop.ini
+.DS_Store

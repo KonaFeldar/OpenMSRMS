@@ -68,6 +68,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RMSEntities\Items\Item.cs" />
     <Compile Include="SettingsManager\AppSettingsDialog.cs">
       <SubType>Form</SubType>
     </Compile>
